@@ -10,7 +10,6 @@
 # If the name ALL appears as a regular expression it is always used
 # in addition to the first matching regex or DEFAULT.
 #
-#
 # You may specify a format string as part of the
 # filter.  The string is composed of a `%' followed
 # by a single format character, or followed by a set of format
