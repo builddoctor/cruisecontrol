@@ -7,6 +7,7 @@
 # If the repository name does not match any of the regular expressions in this
 # file, the "DEFAULT" line is used, if it is specified.
 #
+#
 # If the name ALL appears as a regular expression it is always used
 # in addition to the first matching regex or DEFAULT.
 #
