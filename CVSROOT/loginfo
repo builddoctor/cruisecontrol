@@ -25,7 +25,3 @@
 #DEFAULT (echo ""; id; echo %s; date; cat) >> $CVSROOT/CVSROOT/commitlog
 # or
 #DEFAULT (echo ""; id; echo %{sVv}; date; cat) >> $CVSROOT/CVSROOT/commitlog
-
-#Send mail to the checkins mailing list.
-DEFAULT (echo ls $CVSROOT/CVSROOT/; $CVSROOT/CVSROOT/syncmail %{sVv} checkinlistener@pauljulius.com)
-#myproject-checkins@lists.sourceforge.net
