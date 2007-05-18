@@ -35,11 +35,20 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  ****************************************************************************-->
 <project name="connectfour" default="all">
-    <target name="all" depends="compile, test, jar"/>
+    <target name="all" depends="clean, compile, sleep, test, jar"/>
+
+    <target name="clean">
+        <delete dir="target" quiet="true" />
+    </target>
 
     <target name="compile">
         <mkdir dir="target/classes"/>
         <javac srcdir="src" destdir="target/classes"/>
+    </target>
+
+    <target name="sleep">
+        <echo message="Sleeping for a while so you can see the build in the new dashboard" />
+        <sleep seconds="60" />
     </target>
 
     <target name="test" depends="compile">
